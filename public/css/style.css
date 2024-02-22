@@ -1,0 +1,276 @@
+body {
+  font-family: "Poppins", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/* Index.ejs */
+#filters {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-align: center;
+  margin: 43px 0px 0px 0px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+}
+
+.filter {
+  margin-right: 2rem;
+  margin-top: 2rem;
+  opacity: 0.7;
+}
+
+.filter:hover {
+  opacity: 1;
+  color: #fe424d;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.tax-info {
+  display: none;
+}
+
+.tax-toggle {
+  border: 1px solid #fe424d;
+  border-radius: 10px;
+  height: 3rem;
+  padding: 1rem;
+  margin-left: 4rem;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .tax-toggle {
+    margin-left: 2rem; /* Adjust margin for smaller screens */
+  }
+}
+label {
+  display: unset;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  /* Reduce the font size for smaller screens */
+  .filter div i {
+    font-size: 20px; /* Adjust as needed */
+  }
+}
+
+label {
+  display: unset;
+}
+.container {
+  display: block;
+}
+/* CSS for Search Form in Navbar */
+.navbar-nav .search-inp {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.navbar-nav .btn-search {
+  background-color: #fe424d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+/* Optional: Hover styles for the search button */
+.navbar-nav .btn-search:hover {
+  background-color: #fe424d;
+  color: #fff;
+  border: 1px solid #fe424d !important;
+}
+
+/* Show.ejs */
+@media (max-width: 768px) {
+  /* Add your responsive styles for the map section here */
+  .col-7.cols-lg-2.cols-md-2.cols-sm-1.offset-2 {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+/* 320px Show */
+@media (max-width: 320px) {
+  p.card-text {
+    position: relative;
+    left: -14px;
+    margin-top: 13px;
+  }
+}
+@media (max-width: 320px) {
+  .navbar-nav .search-inp {
+    width: 173px;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 320px) {
+  textarea.form-control {
+    height: 171px;
+    width: 260px;
+  }
+}
+@media (max-width: 320px) {
+h3.map_title {
+    font-size: 16px;
+    font-weight: 700;
+}
+}
+
+
+a.listing_link:hover {
+  color: #fe424d;
+  font-size: 16px;
+  font-weight: 600;
+}
+/* index ejs --> card customized */
+
+/* Footer */
+/* footer.text-center {
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+} */
+/* Card */
+.card_listing {
+  border: none !important;
+  margin-bottom: 4px;
+}
+.card-img-top {
+  border-radius: 1rem !important ;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+.card-body {
+  padding: 0px !important;
+}
+a.listing_link {
+  text-decoration: none;
+  color: black;
+}
+/* card effect */
+.card-img-overlay {
+  opacity: 0;
+}
+.card-img-overlay:hover {
+  opacity: 0.8;
+  font-weight: 800;
+  color: aliceblue;
+}
+
+/* new create */
+.form-label {
+  margin-bottom: 0.2rem;
+  line-height: 2px;
+}
+button.btn.btn-primary.btn-add {
+  background-color: #fe424d;
+  border: #fe424d;
+}
+/* show page -->Show.ejs */
+a.Text_title {
+  text-decoration: none;
+  font-size: 27px;
+  color: black;
+  font-weight: 700;
+}
+.show-img {
+  height: 30vh;
+}
+.btns {
+  display: flex;
+}
+button.btn.btn-dark.col-1.offset-4 {
+  width: 5rem;
+  background-color: #fe424d;
+  border: #fe424d;
+}
+a.btn.btn-dark.col-1.offset-2 {
+  width: 5rem;
+  background-color: #fe424d;
+  border: #fe424d;
+}
+/* Show Query Used */
+/*1024px  media Query */
+@media only screen and(max-device-width: 1024px) {
+  .show-img {
+    height: 40vh;
+    width: 441rem !important;
+    margin-left: -40px;
+  }
+  a.Text_title {
+    text-decoration: none;
+    font-size: 21px;
+    color: black;
+    margin-left: -32px;
+    font-weight: 700;
+  }
+}
+/* max-width */
+@media only screen and (max-device-width: 320px) {
+  .show-img {
+    height: 36vh;
+    width: 19rem !important;
+    margin-left: -31px;
+  }
+}
+/* Review */
+.card.card_review {
+  border: 1px sold black;
+  border: 1px solid black !important;
+  /* margin: auto; */
+  margin-bottom: 11px;
+  margin-left: -5px;
+}
+/* MAP */
+
+#map {
+  height: 400px;
+  width: 550px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+}
+#map:hover {
+  box-shadow: 0px 10px 20px 5px #fe424d;
+  transform: translateY(-4px);
+}
+/* Media query for small screens (up to 576px) */
+@media (max-width: 576px) {
+  #map {
+    height: 308px;
+    width: 392px;
+    position: relative;
+    left: -40px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+}
+@media (max-width: 320px) {
+  #map {
+    width: 17rem;
+    position: relative;
+    left: -5px;
+    height: 17rem;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* Media query for devices with a screen width up to 320px */
+@media only screen and (max-device-width: 320px) {
+  #map {
+    width: 278px;
+    height: 289px;
+  }
+}
+
+/* navbar */
+a.nav-link.Welcome {
+  border: 1px solid #fe424d;
+  border-radius: 15px;
+  box-shadow: 5 0 2 1px #fe424d;
+}

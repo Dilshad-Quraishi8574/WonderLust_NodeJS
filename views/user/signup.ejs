@@ -1,0 +1,73 @@
+<% layout("layouts/boilerplate.ejs") %>
+
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <form method="POST" action="/signup"
+        class="needs-validation" novalidate>
+         <div class="row mt-4">
+           <div class="col-md-8">
+             <div class="mb-3 ">
+               <h2>Wonderlust Signup</h2>
+               <label for="" class="form-label">First Name</label>
+               <input type="text" name="first_name" id="first_name" 
+               required
+               class="form-control" />
+               <div class="valid-feedback">First name are Valid</div>
+               <div class="invalid-feedback">required First Name!</div>
+             </div>
+       
+             <div class="mb-1 ">
+               <label for="" class="form-label">Last Name</label>
+               <input type="text" name="last_name" id="last_name"
+               required
+                class="form-control" />
+                <div class="valid-feedback">Last Name are Valid</div>
+                <div class="invalid-feedback">required Last Name!</div>
+             </div>
+       
+             <div class="mb-1 ">
+                <label for="" class="form-label">Mobile Number</label>
+                <input type="number" name="mobile_number" id="mobile_number"
+                required
+                 class="form-control" />
+                 <div class="valid-feedback">Mobile Number are Valid</div>
+                 <div class="invalid-feedback">required Mobile Number!</div>
+              </div>
+
+             <div class="mb-1">
+               <label for="email" class="form-label">Email</label>
+               <input type="email" name="email" id="email"
+               required
+                class="form-control" />
+                <div class="valid-feedback">Email are Valid</div>
+                <div class="invalid-feedback">required Email!</div>
+             </div>
+       
+             <div class="mb-1">
+               <label for="location" class="form-label">Username</label>
+               <input type="text" name="username" id="username"
+               required
+                class="form-control" />
+                <div class="valid-feedback">Username are Valid</div>
+                <div class="invalid-feedback">required Username!</div>
+             </div>
+             <div class="mb-1">
+                <label for="location" class="form-label">Password</label>
+                <input type="password" name="password" id="password"
+                required
+                 class="form-control" />
+                 <div class="valid-feedback">Password are Valid</div>
+                 <div class="invalid-feedback">required Password!</div>
+              </div>
+       
+         
+             <br><br>
+             <div class="mb-3 ">
+               <button type="submit" class="btn btn-primary btn-add">Submit</button>
+             </div>
+           </div>
+         </div></div>
+    <div class="col-md-3"></div>
+</div>
+</form>

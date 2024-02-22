@@ -1,0 +1,65 @@
+<% layout("layouts/boilerplate.ejs") %>
+
+<form method="POST"  action="/listings"
+ class="needs-validation" novalidate enctype="multipart/form-data">
+  <div class="row mt-4">
+    <div class="col-md-5">
+      <div class="mb-3 ">
+        <h2>New Detail</h2>
+        <label for="" class="form-label">Title</label>
+        <input type="text" name="listing[title]" id="" 
+        required
+        class="form-control" />
+        <div class="valid-feedback">Title are Valid</div>
+        <div class="invalid-feedback">required title!</div>
+      </div>
+
+      <div class="mb-1 ">
+        <label for="" class="form-label">Description</label>
+        <input type="text" name="listing[description]" id=""
+        required
+         class="form-control" />
+         <div class="valid-feedback">Description are Valid</div>
+         <div class="invalid-feedback">required Description!</div>
+      </div>
+
+      <div class="mb-1">
+        <label for="" class="form-label">Upload New Image</label>
+        <input type="file" name="listing[image]" id=""
+        required
+         class="form-control" />
+      </div>
+
+      <div class="mb-1">
+        <label for="" class="form-label">Price</label>
+        <input type="text" name="listing[price]" id=""
+        required
+         class="form-control" />
+         <div class="valid-feedback">Price are Valid</div>
+         <div class="invalid-feedback">required Price!</div>
+      </div>
+
+      <div class="mb-1">
+        <label for="location" class="form-label">Location</label>
+        <input type="text" name="listing[location]" id=""
+        required
+         class="form-control" />
+         <div class="valid-feedback">Location are Valid</div>
+         <div class="invalid-feedback">required location!</div>
+      </div>
+
+      <div class="mb-1 ">
+        <label for="" class="form-label">Country</label>
+        <input type="text" name="listing[country]" id=""
+        required
+         class="form-control" />
+         <div class="valid-feedback">Country  Valid</div>
+         <div class="invalid-feedback">required country!</div>
+      </div> 
+      <br><br>
+      <div class="mb-3 ">
+        <button type="submit" class="btn btn-primary btn-add">Submit</button>
+      </div>
+    </div>
+  </div>
+</form>
