@@ -2,7 +2,6 @@
 <script>
   const mapToken = "<%=process.env.MAP_TOKEN%>";
   const listing =<%- JSON.stringify(listing)%>;
-  // const coordinates =<%- JSON.stringify(listing.geometry.coordinates)%>
 </script>
 <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-1">
   <div class="col-7 offset-1 mt-4 ">
@@ -16,7 +15,6 @@
         alt="listing_image"
       />
       <div class="card-body">
-        <!-- <p class="card-text"></p> -->
         <p class="card-text">
           <i>Owner by</i>&nbsp;<b><%= listing.owner.username%></b>
           <br />
@@ -140,7 +138,6 @@
           data-rating="<%=review.rating%>"
           aria-describedby="rated-element"
         ></p>
-        <!-- <a href=" class="btn btn-danger btn-add">Delete</a> -->
         <form
           method="POST"
           action="/listings/<%= listing._id %>/reviews/<%= review._id%>?_method=DELETE"
