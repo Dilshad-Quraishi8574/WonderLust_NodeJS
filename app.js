@@ -84,19 +84,6 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-// app.get("/demouser",async(req,res)=>{
-//     let fakeUser = new User({
-//         first_name:"Dilshadd ",
-//         last_name:"Quraishii",
-//         mobile_number:8574987698,
-//         email:"dilshadali.85744@gmail.com",
-//         username:"Dilshad@1234",
-//     });
-//     let registeredUser = await User.register(fakeUser,"Dilshad");
-//     res.send(registeredUser);
-// })
-
-
 
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // (midddlewere used in success and error)
@@ -131,9 +118,7 @@ app.use((err, req, res, next) => {
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // (Check Server work or not)
-app.get("/", (req, res) => {
-  res.send("Working");
-});
+
 app.listen(port, () => {
   console.log(`App Listen on the Port ${port}`);
 });
