@@ -104,6 +104,13 @@ app.use("/listings/:id/reviews",routeReviews);
 app.use("/",routeUser)
 
 
+app.get("/", (req, res) => {
+  res.redirect("/listings");
+});
+
+
+
+
 // (Not match any route)
 app.all("*", (req, res, next) => {
   next(new ExpressError(404, "page not found"));
