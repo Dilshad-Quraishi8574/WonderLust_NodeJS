@@ -96,7 +96,9 @@ app.use((req, res, next) => {
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // (Listing All data --> routes/listing.js)
-
+app.get("/", (req, res) => {
+  res.redirect("/listings");
+});
 app.use("/listings", routeListings);
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // (Review Router All data --> routes/review.js)
@@ -104,9 +106,7 @@ app.use("/listings/:id/reviews",routeReviews);
 app.use("/",routeUser)
 
 
-app.get("/", (req, res) => {
-  res.redirect("/listings");
-});
+
 
 
 
